@@ -1,0 +1,24 @@
+﻿using System;
+
+namespace BekMod
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            double x = Convert.ToInt32(Console.ReadLine());
+            double eps = Convert.ToDouble(Console.ReadLine());
+            double res = 0;
+            int i = 1;
+
+            do
+            {
+                res += Math.Pow(x, i) / i;
+                i++;
+            } while (res > eps);
+
+            Console.WriteLine(-res);
+        }
+    }
+}
