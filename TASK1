@@ -1,0 +1,21 @@
+using System;
+
+namespace BekMod
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double a = Convert.ToDouble(Console.ReadLine());
+            int n = Convert.ToInt32(Console.ReadLine());
+            double sum = 0;
+            
+            for (int i = n; i > 0; i--)
+            {
+                sum += Math.Log(Math.Pow(a, i));
+            }
+
+            Console.WriteLine(sum);
+        }
+    }
+}
